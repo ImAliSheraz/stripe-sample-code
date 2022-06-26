@@ -11,10 +11,12 @@ build and run scripts you can use to start up the application.
 composer install
 ```
 
-2. Run the server
+2. Add your Stripe secret key in create.php file.
+
+3. Run the server
 
 ```
 php -S 127.0.0.1:8032 -docroot=public
 ```
 
-3. Go to [http://localhost:4242/public/checkout.html](http://localhost:4242/public/checkout.html)
+4. Go to [http://127.0.0.1:8032/public/checkout.html](http://127.0.0.1:8032/public/checkout.html)

@@ -3,9 +3,10 @@
 require 'vendor/autoload.php';
 
 // This is your test secret API key.
-\Stripe\Stripe::setApiKey('sk_test_51L2V8wInVGTZ90hCdMoru2naicbFXBwz4dzc5tZc5PhYFxHZMFyFx7hM7k4MvdrpEcGyZNchagRbz8O63uDqw1UR00TbphYg9f');
+\Stripe\Stripe::setApiKey([STRIPE_KEY]);
 
-function calculateOrderAmount(array $items): int {
+function calculateOrderAmount(array $items): int
+{
     // Replace this constant with a calculation of the order's amount
     // Calculate the order total on the server to prevent
     // people from directly manipulating the amount on the client
